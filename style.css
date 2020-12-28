@@ -1,0 +1,104 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    background: #dcdcdc;
+}
+
+#app {
+    border: 1px solid #ccc;
+    background-color: #f58bb7;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+}
+
+.calculator {
+    border: 1px solid #ccc;
+    background-color: #f58bb7;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 600px;
+}
+
+.input {
+    width: 388px;
+    height: 80px;
+    border-radius: 0px;
+    border: 1px solid black;
+    background-color: #333333;
+    color: #d9d9d9;
+    padding: 0 5px 0 5px;
+    margin: 0 0px 10px 0px;
+    font-size: 30px;
+}
+
+.input:focus,
+.input:active {
+    border-color: #03a9f4;
+    box-shadow: 0 0 4px #03A9F4;
+    outline: none 0;
+}
+
+.button {
+    height: 60px;
+    background-color: #fff;
+    border-radius: 3px;
+    border: 1px solid #c4c4c4;
+    background-color: transparent;
+    font-size: 2rem;
+    color: black;
+    background-image: linear-gradient(to bottom, transparent, transparent 50%, rgba(0, 0, 0, .04));
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .05), inset 0 1px 0 0 rgba(255, 255, 255, .45), inset 0 -1px 0 0 rgba(255, 255, 255, .15), 0 1px 0 0 rgba(255, 255, 255, .15);
+    text-shadow: 0 1px rgba(255, 255, 255, .4);
+}
+
+.mode {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.equal-sign {
+    background-color: #94989b;
+    border-color: #337cac;
+    color: black;
+    height: 100%;
+    grid-area: 2 / 4 / 6 / 5;
+}
+
+.equal-sign:hover {
+    background-color: #94989b;
+}
+
+.toggle-button {
+    border: none;
+    background-color: #333333;
+    cursor: pointer;
+    outline: none;
+    font-size: 1rem;
+    color: #fff;
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.35);
+}
+
+p {
+    margin-top: 0;
+}
+
+button::-moz-focus-inner {
+    border-color: transparent;
+}
+
+.text1 {
+    color: #fff;
+}
